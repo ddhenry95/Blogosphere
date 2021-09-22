@@ -1,6 +1,6 @@
 BLOGOSPHERE
 
-An app designed to let the user make blog posts and send them to fellow users.
+An app designed to let the user make blog posts and post them to their followers.
 
 DAMON "DUKE" HENRY
 
