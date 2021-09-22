@@ -1,0 +1,25 @@
+Blogosphere: TO DO
+
+---------
+OBJ:    Create a website with a text box
+        that allows someone to input text
+        that will be submitted and displayed.
+        Nothing fancy, just make a button that
+        does stuff. The CSS can be applied
+        later.
+
+Components:
+
+HEADER
+
+BUTTON:         When clicked, it should open
+                a text box where the user can
+                type what they want, with a
+                button at the bottom to let them
+                send it.
+
+TEXT BOX        The text box should be a bit
+                bigger, more like something you
+                would see in Reddit or something.
+
+FOOTER
