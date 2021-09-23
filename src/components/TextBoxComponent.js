@@ -5,40 +5,33 @@ import { Button } from 'reactstrap'
 
 const PostButton = () => {
     return(
-        <div class='row justify-content-center'>
-            <Button color='success' size='lg'>Post</Button>
+        <div className='row justify-content-center'>
+            <Button onClick={() => console.log(`Post button clicked!`)} color='success' size='lg'>Post</Button>
         </div>
     )
 }
 
 const TextInput = () => {
     return(
-        <div class='row justify-content-center'>
+        <div className='row justify-content-center'>
             <textarea
-                class='form-control mt-4'
+                className='col form-control mt-4'
                 placeholder={`What's on your mind?`}
-                style={{resize: 'none', height: '480px'}}
+                style={{resize: 'none', height: '480px', paddingBottom: '20px'}}
             >
             </textarea>
-        </div>
-    )
-}
-
-const SubmitButton = () => {
-    return(
-        <div class='row justify-content-center'>
-            <Button class='m4' color='primary'>Submit</Button>
+            <Button onClick={() => console.log(`Submit button clicked!`)} color='primary'>Submit</Button>
         </div>
     )
 }
 
 class TextBox extends Component {
+
     render() {
         return (
-            <div class='container mt-4 mx-auto'>
+            <div className='container mt-4 mx-auto'>
                 <PostButton />
                 <TextInput />
-                <SubmitButton />
             </div>
         )
     }

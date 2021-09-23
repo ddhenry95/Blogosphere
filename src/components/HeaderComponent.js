@@ -3,7 +3,13 @@ import React, { Component } from 'react'
 class Header extends Component {
     render() {
         return (
-            <div />
+            <div className='container'>
+                <div className='row'>
+                    <div className='col mt-4 justify-content-center'>
+                        <h1>Blogosphere</h1>
+                    </div>
+                </div>
+            </div>
         )
     }
 }
