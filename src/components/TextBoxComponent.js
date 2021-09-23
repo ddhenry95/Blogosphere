@@ -3,17 +3,31 @@ import { Button } from 'reactstrap'
 
 // Spreadsheets
 
+const PostButton = () => {
+    return(
+        <div class='row justify-content-center'>
+            <Button color='success' size='lg'>Post</Button>
+        </div>
+    )
+}
+
 const TextInput = () => {
     return(
-        <div class='col-9 mt-2'>
-            <input
-                type='text'
-                class='form-control'
-                placeholder='Start typing...'
-                aria-label='blog' id='blog' name='blog'
+        <div class='row justify-content-center'>
+            <textarea
+                class='form-control mt-4'
+                placeholder={`What's on your mind?`}
+                style={{resize: 'none', height: '480px'}}
             >
-            </input>
-            <Button class='col-3 mt-2 align-self-end' color='primary'>Submit</Button>
+            </textarea>
+        </div>
+    )
+}
+
+const SubmitButton = () => {
+    return(
+        <div class='row justify-content-center'>
+            <Button class='m4' color='primary'>Submit</Button>
         </div>
     )
 }
@@ -22,11 +36,9 @@ class TextBox extends Component {
     render() {
         return (
             <div class='container mt-4 mx-auto'>
-                <div class='row d-flex justify-content-center'>
-                    <Button color='success' size='lg'>Post</Button>
-                    <TextInput />
-                    <p class='col p-1'>Click the button to begin writing!</p>
-                </div>
+                <PostButton />
+                <TextInput />
+                <SubmitButton />
             </div>
         )
     }
